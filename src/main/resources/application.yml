@@ -13,3 +13,7 @@ spring:
         format_sql: true
 
     defer-datasource-initialization: true
+
+jwt:
+  issuer: choifresh@gmail.com
+  secret_key: morebitcharacterfirstonlyalgorithmtestjwtsecretkey
