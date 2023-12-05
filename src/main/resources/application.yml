@@ -14,6 +14,17 @@ spring:
 
     defer-datasource-initialization: true
 
+  security:
+    oauth2:
+      client:
+        registration:
+            google:
+                client-id: ${GOOGLE_CLIENT_ID}
+                client-secret: ${GOOGLE_CLIENT_SECRET}
+                scope:
+                - email
+                - profile
+
 jwt:
-  issuer: choifresh@gmail.com
-  secret_key: morebitcharacterfirstonlyalgorithmtestjwtsecretkey
+  issuer: ${JWT_ISSUER}
+  secretKey: ${JWT_SECRET_KEY}
